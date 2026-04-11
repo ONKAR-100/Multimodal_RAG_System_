@@ -37,7 +37,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 # NOTE: Before running, ensure you have the Ollama library installed:
 # pip install ollama
 # Also, make sure the Ollama application is running and you have pulled the model:
-# ollama pull llama3-chatqa:8b or Any LLM Model you want
+# ollama pull llama3-chatqa:8b model or any its your choice
 
 # Load environment variables
 load_dotenv()
@@ -55,8 +55,8 @@ VECTOR_DB_COLLECTION_NAME = "multimodal_rag_sih_advanced"
 EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
 RERANKER_MODEL_NAME = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 WHISPER_MODEL_NAME = "base"
-# <-- MODIFICATION: You can Swap Ollama models here -->
-OLLAMA_MODEL_NAME = "phi3:latest"
+# <-- MODIFICATION: You can Swap Ollama models Here -->
+OLLAMA_MODEL_NAME = "llama3-chatqa:8b"
 
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 100
